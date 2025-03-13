@@ -1,35 +1,27 @@
-# Equivariant Hypergraph Diffusion Neural Operators
+# FHRLI
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+The pytorch implementation of "Investigating All Uncertainties in Hypergraph Representation Learning and Inference" 
 
-The official implementation of ICLR 2023 paper [Equivariant Hypergraph Diffusion Neural Operators](https://arxiv.org/abs/2207.06680).
+# Getting Started
 
-Peihao Wang, Shenghao Yang, Yunyu Liu, Zhangyang (Atlas) Wang, Pan Li
-
-## Introduction
-
-In this work, we are inspired by hypergraph diffusion algorithms and design a novel HNN architecture that holds provable expressiveness while keeping efficiency. 
-Abstract: Hypergraph neural networks (HNNs) using neural networks to encode hypergraphs provide a promising way to model higher-order relations in data and further solve relevant prediction tasks. However, higher-order relations often contain complex patterns and are hard to process due to their irregularity. Hence, designing an HNN that suffices to express these relations while keeping computational efficiency is challenging. This work proposes a novel HNN architecture named ED-HNN. Inspired by recent hypergraph diffusion algorithms, ED-HNN provably represents any continuous equivariant hypergraph diffusion operators which are known capable of modeling complex higher-order relations. Besides being expressive, ED-HNN can be implemented efficiently by combining the star expansions of hypergraphs with standard message passing neural networks. ED-HNN also shows great superiority in processing heterophilic hypergraphs and constructing deep models. We evaluate ED-HNN over nine real-world hypergraph datasets. ED-HNN achieves uniformly state-of-the-art performance over these nine datasets and outperforms the previous best baselines by more than 2% over four datasets therein.
-
-![](figures/teaser.png)
-
-## Getting Started
-
-### Dependency
+## Dependency
 
 To run our code, the following Python libraries which are required to run our code:
 
 ```
-pytorch 1.8.0+
+python 3.9
+pytorch 1.13.1
 torch-geometric
 torch-scatter
 torch-sparse
 torch-cluster
+torch-spline-conv
 ```
 
-### Data Preparation
+## Data Preparation
 
-Download our preprocessed dataset from the [HuggingFace Hub](https://huggingface.co/datasets/peihaowang/edgnn-hypergraph-dataset).
+In this work, we use the datasets preprocessed from [ED-HNN](https://huggingface.co/datasets/peihaowang/edgnn-hypergraph-dataset).
+
 Then put the downloaded directory under the root folder of this repository. The directory structure should look like:
 ```
 ED-HNN/
