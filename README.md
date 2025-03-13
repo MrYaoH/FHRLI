@@ -45,7 +45,7 @@ Please use the following commands to reproduce our results:
 <summary>Cora</summary>
 
 ```
-python train.py --method EDGNN --dname cora --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0 
+python train.py --method FHRLI_EDGNN --dname cora --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0 
 --MLP3_num_layers 1 --Classifier_num_layers 1 --MLP_hidden 256 --Classifier_hidden 256 --aggregate mean
 --restart_alpha 0.0 --lr 0.001 --wd 0 --epochs 500 --runs 10
 --cuda <cuda_id> --data_dir <data_path> --raw_data_dir <raw_data_path> 
@@ -58,7 +58,7 @@ python train.py --method EDGNN --dname cora --All_num_layers 1 --MLP_num_layers 
 <summary>Citeseer</summary>
 
 ```
-python train.py --method HFLS_EDGNN_PF --dname citeseer --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0
+python train.py --method FHRLI_EDGNN --dname citeseer --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0
 --MLP3_num_layers 1 --Classifier_num_layers 1 --MLP_hidden 256 --Classifier_hidden 256 --aggregate mean 
 --restart_alpha 0.0 --wd 0 --epochs 500 --runs 10
 --cuda <cuda_id> --data_dir <data_path> --raw_data_dir <raw_data_path>
@@ -72,7 +72,7 @@ python train.py --method HFLS_EDGNN_PF --dname citeseer --All_num_layers 1 --MLP
 <summary>Pubmed</summary>
 
 ```
-python train.py --method EDGNN --dname pubmed --All_num_layers 8 --MLP_num_layers 2 --MLP2_num_layers 2
+python train.py --method FHRLI_EDGNN --dname pubmed --All_num_layers 8 --MLP_num_layers 2 --MLP2_num_layers 2
 --MLP3_num_layers 2 --Classifier_num_layers 2 --MLP_hidden 512 --Classifier_hidden 256 --normalization None --aggregate mean
 --restart_alpha 0.5 --wd 0 --epochs 500 --runs 10
 --cuda <cuda_id> --data_dir <data_path> --raw_data_dir <raw_data_path>
@@ -86,7 +86,7 @@ python train.py --method EDGNN --dname pubmed --All_num_layers 8 --MLP_num_layer
 <summary>Cora-CA</summary>
 
 ```
-python train.py --method EDGNN --dname coauthor_cora --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0
+python train.py --method FHRLI_EDGNN --dname coauthor_cora --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0
 --MLP3_num_layers 1 --Classifier_num_layers 2 --MLP_hidden 128 --Classifier_hidden 96 --aggregate mean 
 --restart_alpha 0.0 --wd 0 --epochs 500 --runs 10
 --cuda <cuda_id> --data_dir <data_path> --raw_data_dir <raw_data_path>
@@ -99,7 +99,7 @@ python train.py --method EDGNN --dname coauthor_cora --All_num_layers 1 --MLP_nu
 <summary>DBLP-CA</summary>
 
 ```
-python train.py --method EDGNN --dname coauthor_dblp --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0
+python train.py --method FHRLI_EDGNN --dname coauthor_dblp --All_num_layers 1 --MLP_num_layers 0 --MLP2_num_layers 0
 --MLP3_num_layers 1 --Classifier_num_layers 2 --MLP_hidden 128 --Classifier_hidden 96 --aggregate mean
 --restart_alpha 0.0 --wd 0 --epochs 500 --runs 10
 --cuda <cuda_id> --data_dir <data_path> --raw_data_dir <raw_data_path>
