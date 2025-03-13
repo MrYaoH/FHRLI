@@ -234,7 +234,6 @@ if __name__ == '__main__':
     parser.add_argument('--n_rules', default=5, type=int, help='number of fuzzy rules')
     parser.add_argument('--l_1', default=0.001, type=float, help='weight decay factor of input fuzzifer')
     parser.add_argument('--l_2', default=0.05, type=float, help='weight decay factor of fconv')
-    parser.add_argument('--l_3', default=0.001, type=float, help='weight decay factor of TSK classifier')
 
     # Args for EDGNN
     parser.add_argument('--MLP2_num_layers', default=0, type=int, help='layer number of mlp2')
