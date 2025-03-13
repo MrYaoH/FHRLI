@@ -36,6 +36,8 @@ ED-HNN/
 
 ## Training
 
+Before training, please create a folder 'log' for storing the exprimental results.
+
 Please use the following commands to reproduce our results:
 
 <details>
